@@ -23,7 +23,7 @@ public class Task2 {
             for (int j = 0; j < imgSize; j++)
                 pixels[i][j] = 1;
         }
-        Function<Integer, Integer> f = integer -> integer + 1;
+        Function<Integer, Integer> f = integer -> integer + 1;  // testing function
 
         ImageProcessorTask myImg = new ImageProcessorTask(pixels, f);
         pool.invoke(myImg); // start the task
